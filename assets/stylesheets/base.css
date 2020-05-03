@@ -683,6 +683,15 @@ article {
     color: dimgrey;
 }
 
+.contacts li a.instagram:hover {
+    color: #F77737;
+}
+
+.contacts li a.twitter:hover {
+    color: #1DA1F2;
+    ;
+}
+
 .contacts li a.website {
     display: none;
 }
