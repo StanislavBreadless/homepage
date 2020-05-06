@@ -24,7 +24,7 @@ deploy:
       branch: develop
   - provider: firebase
     token: $FIREBASE_TOKEN
-    project: breadless-bsa-homepage-dev
+    project: stasbreadless-bsa20-homepage
     skip_cleanup: true
     on:
       branch: travis-integration
