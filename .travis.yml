@@ -19,3 +19,8 @@ deploy:
     project: breadless-bsa-homepage-dev
     on:
       branch: develop
+  - provider: firebase
+    token: $FIREBASE_TOKEN
+    project: breadless-bsa-homepage-dev
+    on:
+      branch: travis-integration
