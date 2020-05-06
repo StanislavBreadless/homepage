@@ -1,0 +1,15 @@
+.long-ago-text {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0 0 1em 0;
+  font-weight: bold;
+}
+
+.contacts li a.instagram:hover {
+  color: #f77737;
+}
+
+.contacts li a.twitter:hover {
+  color: #1da1f2;
+}
