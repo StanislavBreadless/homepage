@@ -5,6 +5,7 @@ script:
   - npm install --global workbox-cli
   - workbox generateSW workbox-config.js
   - mv index.html ./public/index.html
+  - mv favicon.ico ./public/
   - mv -v assets ./public/
 deploy:
   - provider: firebase
