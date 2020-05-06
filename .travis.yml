@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  - 11.13.0
+script:
+  - npm install --global workbox-cli
+  - mkdir public
+  - workbox generateSW workbox-config.js
+  - mv index.html public/index.html
+  - mv favicon.ico public/
+  - mv -v assets public/
+  - ls -R
+deploy:
+  - provider: firebase
+    token: $FIREBASE_TOKEN
+    project: breadless-bsa-homepage-prod
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: firebase
+    token: $FIREBASE_TOKEN
+    project: breadless-bsa-homepage-dev
+    skip_cleanup: true
+    on:
+      branch: develop
+  - provider: firebase
+    token: $FIREBASE_TOKEN
+    project: breadless-bsa-homepage-dev
+    skip_cleanup: true
+    on:
+      branch: travis-integration
