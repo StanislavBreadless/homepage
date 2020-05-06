@@ -4,6 +4,8 @@ node_js:
 script:
   - npm install --global workbox-cli
   - workbox generateSW workbox-config.js
+  - mv index.html ./public/index.html
+  - mv -v assets ./public/
 deploy:
   - provider: firebase
     token: $FIREBASE_TOKEN
