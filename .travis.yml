@@ -12,7 +12,7 @@ script:
 deploy:
   - provider: firebase
     token: $FIREBASE_TOKEN
-    project: stasbreadless-bsa20-homepage
+    project: breadless-bsa-homepage-prod
     skip_cleanup: true
     on:
       branch: master
@@ -24,7 +24,7 @@ deploy:
       branch: develop
   - provider: firebase
     token: $FIREBASE_TOKEN
-    project: stasbreadless-bsa20-homepage
+    project: breadless-bsa-homepage-prod
     skip_cleanup: true
     on:
       branch: travis-integration
