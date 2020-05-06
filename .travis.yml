@@ -8,7 +8,6 @@ script:
   - mv index.html public/index.html
   - mv favicon.ico public/
   - mv -v assets public/
-  - ls -R
 deploy:
   - provider: firebase
     token: $FIREBASE_TOKEN
